@@ -56,7 +56,7 @@
   top: 138px;
   z-index: 0;
   width: 200px;
-  animation: cowmove 15s infinite;
+  animation: cowmove 10s infinite;
 }
 
 @keyframes cowmove {

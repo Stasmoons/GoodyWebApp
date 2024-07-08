@@ -34,12 +34,13 @@ minesButtonGetSignal.onclick = function () {
       minesButtonGetSignal.disabled = false;
       backchek == 0
     }
+
+    const range = 174;
+    const minesRandomPhotoNumber = Math.floor(Math.random() * (range - 1) + 1);
+    minesSignal.src = `assets/mines/images/signals/${minesRandomPhotoNumber}.jpg`;
+
     minesLoadingSignal.classList.add("mines-deactive");
     minesSignal.classList.remove("mines-deactive");
     minesButtonGetSignal.disabled = false;
-
-    const range = 15;
-    const minesRandomPhotoNumber = Math.floor(Math.random() * (range - 1) + 1);
-    minesSignal.src = `assets/mines/images/signals/${minesRandomPhotoNumber}.jpg`;
   }, 3000);
 }

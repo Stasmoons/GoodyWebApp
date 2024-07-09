@@ -25,6 +25,10 @@ minesButtonGetSignal.onclick = function () {
   console.log(backchek);
 
   const timer = setTimeout(function () {
+    const range = 174;
+    const minesRandomPhotoNumber = Math.floor(Math.random() * (range - 1) + 1);
+    minesSignal.src = `assets/mines/images/signals/${minesRandomPhotoNumber}.jpg`;
+
     if (backchek == 0) {
       minesImgSignal.style["z-index"] = "0"
     }
@@ -34,10 +38,6 @@ minesButtonGetSignal.onclick = function () {
       minesButtonGetSignal.disabled = false;
       backchek == 0
     }
-
-    const range = 174;
-    const minesRandomPhotoNumber = Math.floor(Math.random() * (range - 1) + 1);
-    minesSignal.src = `assets/mines/images/signals/${minesRandomPhotoNumber}.jpg`;
 
     minesLoadingSignal.classList.add("mines-deactive");
     minesSignal.classList.remove("mines-deactive");

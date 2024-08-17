@@ -55,11 +55,12 @@ function luckyjetGoTimer(time) {
       luckyjetStopProgress.style["animation"] = `animateProgress ${timerSeconds}s linear infinite`;
       luckyjetStopSignalTimeBlock.classList.remove("luckyjet-deactivate");
       let stopTimer = document.getElementById("luckyjet-stop-timer");
-
-      if (language == "en") {
+      let hash = window.location.hash;
+      hash = hash.substr(1);
+      if (hash == "en") {
         stopTimer.innerHTML = `${time--}${"<span> seconds</span>"}`;
         timerr = time;
-      } if (language == "ru") {
+      } if (hash == "ru") {
         stopTimer.innerHTML = `${time--}${"<span> секунд</span>"}`;
         timerr = time;
       }

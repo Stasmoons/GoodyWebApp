@@ -56,11 +56,12 @@ function aviatorGoTimer(time) {
       aviatorStopProgress.style["animation"] = `animateProgress ${timerSeconds}s linear infinite`;
       aviatorStopSignalTimeBlock.classList.remove("aviator-deactivate");
       let stopTimer = document.getElementById("aviator-stop-timer");
-      
-      if (language == "en") {
+      let hash = window.location.hash;
+      hash = hash.substr(1);
+      if (hash == "en") {
         stopTimer.innerHTML = `${time--}${"<span> seconds</span>"}`;
         timer = time;
-      } if (language == "ru") {
+      } if (hash == "ru") {
         stopTimer.innerHTML = `${time--}${"<span> секунд</span>"}`;
         timer = time;
       }

@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 4cbfc30d2f98e6ae404091b7d9fc6994e56cca16 Stasoon <stas.csa@ya.ru> 1720096126 +0300	commit (initial): first commit
+4cbfc30d2f98e6ae404091b7d9fc6994e56cca16 0000000000000000000000000000000000000000 Stasoon <stas.csa@ya.ru> 1720096131 +0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 4cbfc30d2f98e6ae404091b7d9fc6994e56cca16 Stasoon <stas.csa@ya.ru> 1720096131 +0300	Branch: renamed refs/heads/master to refs/heads/main
+4cbfc30d2f98e6ae404091b7d9fc6994e56cca16 243497113b2736b947cdd2d0b1968ab6988bcdc4 Stasoon <stas.csa@ya.ru> 1720096539 +0300	commit: edit paths
+243497113b2736b947cdd2d0b1968ab6988bcdc4 54f5f45cc6c8f7881f0627bdb45501a091b73f67 Stasoon <stas.csa@ya.ru> 1720096652 +0300	commit: edit urls
+54f5f45cc6c8f7881f0627bdb45501a091b73f67 e9885a928b741304d6f392c9b0e582d60a3971ac Stasoon <stas.csa@ya.ru> 1720097618 +0300	commit: fix game here
+e9885a928b741304d6f392c9b0e582d60a3971ac e2764820fe857ebd7242db688ebc504fff172243 Stasoon <stas.csa@ya.ru> 1720098534 +0300	commit: fix game here links
+e2764820fe857ebd7242db688ebc504fff172243 30d341359eac651b22e395ad7ab95d07d228cdf5 Stasoon <stas.csa@ya.ru> 1720101502 +0300	commit: speed up animations
+30d341359eac651b22e395ad7ab95d07d228cdf5 474e77b22669d76e15807b9d88a367a4d48f1fe3 Stasoon <stas.csa@ya.ru> 1720174580 +0300	commit: fix lucky jet timerr
+474e77b22669d76e15807b9d88a367a4d48f1fe3 46ff3fc5722ab95155b901741d3d01d015d59a07 Stasoon <stas.csa@ya.ru> 1720176541 +0300	commit: edit onewin links
+46ff3fc5722ab95155b901741d3d01d015d59a07 c943631a0f9aacdcb4b516d2e86b1af1459f6cf6 Stasoon <stas.csa@ya.ru> 1720295167 +0300	commit: added mines signals
+c943631a0f9aacdcb4b516d2e86b1af1459f6cf6 b0da330343adc9e71d8eb5dd87cb11cbbf1a1c6f Stasoon <stas.csa@ya.ru> 1720296668 +0300	commit: fix mines
+b0da330343adc9e71d8eb5dd87cb11cbbf1a1c6f 9548688a91d7058d1425f515ca631647327a2947 Stasoon <stas.csa@ya.ru> 1720299661 +0300	commit: fix mines sizing
+9548688a91d7058d1425f515ca631647327a2947 0e391a86ce4efba909ab3a1d3b5cc7cff502b5e9 Stasoon <stas.csa@ya.ru> 1720446321 +0300	commit: more mines signals
+0e391a86ce4efba909ab3a1d3b5cc7cff502b5e9 44d8015dbfd3c66999bcf3cd94042d2cafbe53e6 Stasoon <stas.csa@ya.ru> 1720540793 +0300	commit: added mines signals

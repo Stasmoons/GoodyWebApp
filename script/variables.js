@@ -3,7 +3,9 @@ const timerSeconds = 20;
 //Кнопки запуска игр
 const aviatorGo = document.getElementById("aviator-go");
 const luckyjetGo = document.getElementById("luckyjet-go");
-const rocketQueenGo = document.getElementById("rocket-queen-go");
+const minesGo = document.getElementById("mines-go");
+const royalGo = document.getElementById("royal-go");
+const bumpucksGo = document.getElementById("bumpucks-go");
 
 //Aviator
 const aviatorGetSignal = document.getElementById("aviator-get-signal");
@@ -26,17 +28,6 @@ const luckyjetErrorProgress = document.getElementById("luckyjet-error-progress")
 const luckyjetTextError = document.getElementById("luckyjet-text-error");
 const luckyjetGetSignalTwo = document.getElementById("luckyjet-get-signal-two");
 const luckyjetErrorExit = document.getElementById("luckyjet-error-exit");
-
-//Rocket Queen
-const rocketQueenGetSignal = document.getElementById("rocket-queen-get-signal");
-const rocketQueenStopSignalTimeBlock = document.getElementById("rocket-queen-stop-signal-time-block");
-const rocketQueenPrintSignal = document.getElementById("rocket-queen-print-signal");
-const rocketQueenStopProgress = document.getElementById("rocket-queen-stop-progress");
-const rocketQueenErrorNotification = document.getElementById("rocket-queen-error-notification");
-const rocketQueenErrorProgress = document.getElementById("rocket-queen-error-progress");
-const rocketQueenTextError = document.getElementById("rocket-queen-text-error");
-const rocketQueenGetSignalTwo = document.getElementById("rocket-queen-get-signal-two");
-const rocketQueenErrorExit = document.getElementById("rocket-queen-error-exit");
 
 //Mines
 let minesButtonGetSignal = document.getElementById("minesGetSignal");
@@ -82,7 +73,9 @@ const pageChannel = document.getElementById("page-channel");
 //Страницы игр
 const pageAviator = document.getElementById("page-aviator");
 const pageLuckyjet = document.getElementById("page-luckyjet");
-const pageRocketQueen = document.getElementById("page-rocket-queen");
+const pageMines = document.getElementById("page-mines");
+const pageRoyal = document.getElementById("page-royal");
+const pageBumpucks = document.getElementById("page-bumpucks");
 
 //Кнопка выхода
 const backHome = document.querySelectorAll("#backHome");

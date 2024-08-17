@@ -1,12 +1,4 @@
-function getLanguageFromUrl() {
-  if (window.location.search) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get('lang');
-  }
-  return "ru";
-}
-
-let language = getLanguageFromUrl();
+location.href = window.location.pathname + "#en";
 
 const langArr = {
   "choose": {
@@ -98,9 +90,32 @@ const langArr = {
 
 }
 
+select.addEventListener("change", changeURLLanguage);
 
-for (let key in langArr) {
-  document.querySelectorAll(".lng-" + key).forEach((object) => {
-    object.innerHTML = langArr[key][language]
-  })
+const allLang = ["en", "ru"]
+
+//Перенаправляем на url с указанием языка
+function changeURLLanguage() {
+  let lang = select.value;
+  location.href = window.location.pathname + "#" + lang;
+
+  let hash = window.location.hash;
+  hash = hash.substr(1);
+  if (!allLang.includes(hash)) {
+    location.href = window.location.pathname + "#en";
+    location.reload()
+  }
+  select.value = hash
+
+  //Изменяем контент на страницах
+  // document.querySelector(".lng-choose").innerHTML = langArr["choose"][hash]
+  // document.querySelector(".lng-info").innerHTML = langArr[info][hash]
+
+
+  for (let key in langArr) {
+    document.querySelectorAll(".lng-" + key).forEach((object) => {
+      object.innerHTML = langArr[key][hash]
+    })
+  }
+
 }

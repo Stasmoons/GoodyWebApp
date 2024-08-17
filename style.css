@@ -3,11 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-img {
-  pointer-events: none;
 }
 
 body {
@@ -18,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#141414 0% 50%, #6f1e07 100%);
+  background: linear-gradient(#141414, #2b0220);
   color: #ffffff;
 }
 
@@ -75,7 +70,7 @@ select:focus {
 /*Ð¨Ð°Ð¿ÐºÐ°*/
 
 .header {
-  height: 120px;
+  height: 110px;
 
   position: absolute;
   top: 0px;
@@ -88,15 +83,14 @@ select:focus {
   align-items: center;
   text-align: left;
 
-  border-bottom: 5px solid #fa5109;
-  box-shadow: 0 0 15px #fa5109;
+  border-bottom: 5px solid #ff00ea;
   margin-bottom: 100px;
 }
 
 .header-inner {
   position: absolute;
   text-align: left;
-  top: 25px;
+  top: 22px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -108,10 +102,10 @@ select:focus {
   font-size: 1.5em;
   font-weight: 0;
   position: absolute;
-  left: 4%;
+  left: 8%;
   text-align: left;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-  margin-top: 20px;
+  /* margin-top: -10px; */
 }
 
 
@@ -120,17 +114,35 @@ select:focus {
 }
 
 
+/* .header-lang {
+  width: 60px;
+  height: 40px;
+
+  padding: 2px 0px 2px 2px;
+
+  background: #2F2F2E;
+
+  border: none;
+  border-radius: 10px;
+
+  position: absolute;
+  right: 16px;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+} */
 
 .header-logo-img {
-  background-image: url('assets/icon/menu/logo.png');
+  background-image: url('assets/icon/menu/logo.jpg');
   background-position: center;
   background-size: cover;
   border: none;
   border-radius: 50%;
   position: absolute;
-  right: 7%;
-  width: 80px;
-  aspect-ratio: 1;
+  right: 8%;
+  width: 65px;
+  height: 65px;
   vertical-align: center;
   margin-top: -8px;
 }
@@ -150,9 +162,6 @@ select:focus {
   justify-content: center;
   align-items: center;
   text-align: left;
-  
-  /* !!!! */
-  display: none;
 }
 
 .menu-button-inner {
@@ -215,12 +224,12 @@ select:focus {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 10px;
+  padding: 20px 20px;
   width: 80vw;
 }
 
 .choose p {
-  margin-top: 10vh;
+  margin-top: 6vh;
   font-size: 1.8em;
   font-weight: 450;
   text-align: center;
@@ -245,9 +254,8 @@ select:focus {
   cursor: pointer;
   width: 60vw;
   height: 70vh;
-  border-radius: 10%;
 
-  background-size: contain;
+  background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -256,8 +264,8 @@ select:focus {
   background-image: url("assets/icon/choose/aviator.png");
 }
 
-#rocket-queen-go {
-  background-image: url("assets/icon/choose/rocket-queen.png");
+#mines-go {
+  background-image: url("assets/icon/choose/mines.png");
 }
 
 #luckyjet-go {

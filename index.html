@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles/aviator.css">
   <link rel="stylesheet" href="styles/luckyjet.css">
-  <link rel="stylesheet" href="styles/mines.css">
-  <link rel="stylesheet" href="styles/royal.css">
-  <link rel="stylesheet" href="styles/bumpucks.css">
+  <link rel="stylesheet" href="styles/rocket-queen.css">
   <link rel="stylesheet" href="styles/drukwidecyr-bold.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Goody Signals</title>
+  <title>JetSignal</title>
 </head>
 
 <body>
@@ -20,7 +18,7 @@
   <header id="header" class="header">
     <div class="header-inner">
       <div class="header-line"></div>
-      <p class="header-logo-text">GOODY <br/>SIGNALS</p>
+      <p class="header-logo-text">JETSIGNAL</p>
 
       <div class="header-logo-img">  </div>
     </div>
@@ -30,7 +28,7 @@
     <p class="lng-choose">CHOOSE GAME</p>
     <div class="choose-card">
       <button id="aviator-go" class="choose-button"></button>
-      <button id="mines-go" class="choose-button"></button>
+      <button id="rocket-queen-go" class="choose-button"></button>
       <button id="luckyjet-go" class="choose-button"></button>
       <!-- <button id="royal-go" class="choose-button">
         <img src="assets/icon/choose/royalmines.svg" alt="royalmines">
@@ -121,11 +119,9 @@
       </div>
 
       <div class="aviator-top-content">
-        <img draggable="false" src="assets/aviator/icons/logo.png" alt="logo" class="aviator-logo-game">
-        <p class="aviator-name-bot">@Goody1wbot</p>
+        <img draggable="false" src="assets/aviator/icons/logo.svg" alt="logo" class="aviator-logo-game">
+        <p class="aviator-name-bot">@...</p>
       </div>
-
-
 
       <div class="aviator-container">
         <div class="aviator-print-signal" id="aviator-print-signal"><span class="lng-allGameStartOne">Click on<br>"GET
@@ -174,7 +170,7 @@
 
       <div class="luckyjet-top-content">
         <img draggable="false" src="assets/luckyjet/icons/logo.png" alt="logo" class="luckyjet-logo-game">
-        <p class="luckyjet-name-bot">@Goody1wbot</p>
+        <p class="luckyjet-name-bot">@...</p>
       </div>
 
       <div class="luckyjet-container">
@@ -196,234 +192,67 @@
         </div>
       </div>
 
-      <!-- <img class="luckyjet-pers-animate" src="https://i.postimg.cc/NF4FLHb6/pers.gif" alt=""> -->
       <img class="luckyjet-pers-animate" src="assets/luckyjet/images/pers.png" alt="">
     </div>
   </section>
 
-  <section id="page-mines" class="mines b-none">
-    <div class="mines-background"></div>
-    <div class="mines-inner">
-
-      <div class="mines-instructions-open">
-        <button id="mines-open-instructions">
-          <img src="assets/icon/instructions/open.svg" alt="">
-        </button>
-      </div>
-
-      <div class="mines-button-back">
+  <section id="page-rocket-queen" class="rocket-queen b-none">
+    <div class="rocket-queen-inner">
+      <div class="rocket-queen-button-back">
         <button id="backHome">
           <img src="assets/icon/game/back.svg" alt="back">
         </button>
       </div>
 
-      <div class="mines-container">
-        <div class="mines-text-top">
-          <img draggable="false" src="assets/mines/icons/logo.png" alt="logo" class="luckyjet-logo-game">
-          <p class="mines-text-subtitle">@Goody1wbot</p>
+      <div class="rocket-queen-background"></div>
+
+
+      <div id="rocket-queen-error-notification" class="rocket-queen-error-notification rocket-queen-deactivate">
+        <div class="rocket-queen-error-background"></div>
+        <img class="rocket-queen-icon-error" src="assets/luckyjet/icons/error.svg" alt="error">
+        <p id="rocket-queen-text-error" class="rocket-queen-text-error lng-notification">Wait for the time to expire</p>
+        <div id="rocket-queen-error-exit" class="rocket-queen-error-exit">
+          <img src="assets/luckyjet/icons/error-exit.svg" alt="exit">
         </div>
-        <div id="mines-game-screen" class="mines-game-screen">
-          <div class="mines-screen-active">
-            <img draggable="false" id="minesScreenStart" class="mines-screenStart" src="assets/mines/icons/start.svg"
-              alt="start">
-            <img draggable="false" src="assets/mines/gifs/loading.gif" alt="loading" id="minesLoading"
-              class="mines-loading mines-deactive">
-            <img draggable="false" src="" id="minesImgSignal" alt="signal" class="mines-img-signal mines-deactive">
+        <div id="rocket-queen-error-progress" class="rocket-queen-error-progress"></div>
+      </div>
+
+      <div class="rocket-queen-top-content">
+        <img draggable="false" src="assets/rocket-queen/icons/logo.png" alt="logo" class="rocket-queen-logo-game">
+        <p class="rocket-queen-name-bot">@...</p>
+      </div>
+
+      <div class="rocket-queen-container">
+        <div class="rocket-queen-print-signal" id="rocket-queen-print-signal">
+          <span class="lng-allGameStartOne">
+            Click on<br>"GET SIGNAL"
+          </span>
+        </div>
+        <div class="rocket-queen-button-content">
+          <div class="rocket-queen-stop-signal-time rocket-queen-deactivate" id="rocket-queen-stop-signal-time-block">
+            <p class="rocket-queen-stop-timer" id="rocket-queen-stop-timer"></p>
+            <div class="rocket-queen-stop-progress" id="rocket-queen-stop-progress"></div>
+          </div>
+          <div class="rocket-queen-button-game">
+            <button class="rocket-queen-get-signal lng-allGameGetSignal" id="rocket-queen-get-signal">GET SIGNAL</button>
+            <button class="rocket-queen-get-signal-two rocket-queen-deactivate lng-allGameGetSignal"
+              id="rocket-queen-get-signal-two">GET
+              SIGNAL</button>
+            <a href="https://1wzlcz.life/casino/play/1play_1play_rocketqueen"
+              class="rocket-queen-game-here lng-allGameGameHere">GAME HERE</a>
           </div>
         </div>
       </div>
-      <div class="mines-game-button">
-        <button id="minesGetSignal" class="mines-get-signal lng-allGameGetSignal">GET SIGNAL</button>
-        <a href="https://1wzlcz.life/casino/play/1play_1play_mines" class="mines-game-here lng-allGameGameHere">GAME
-          HERE</a>
-      </div>
+
+      <img class="rocket-queen-pers-animate" src="assets/rocket-queen/images/pers.png" alt="">
     </div>
   </section>
-
-  <section id="page-royal" class="royal b-none">
-    <div class="royal-background"></div>
-    <div class="royal-inner">
-
-      <div class="royal-instructions-open">
-        <button id="royal-open-instructions">
-          <img src="assets/icon/instructions/open.svg" alt="">
-        </button>
-      </div>
-
-      <div class="royal-button-back">
-        <button id="backHome">
-          <img src="assets/icon/game/back.svg" alt="back">
-        </button>
-      </div>
-      <div class="royal-top-content">
-        <div class="royal-game-logo">
-          <img src="assets/royal/icon/logo.svg" alt="logo" draggable="false">
-        </div>
-        <div class="royal-game-name">
-          <p>GOODY</p>
-        </div>
-      </div>
-
-      <div class="royal-card">
-        <div id="royalCardBack" class="royal-back">
-          <p id="royalNumberBack" class="number-back royal-number-back-style"></p>
-        </div>
-        <div id="royalCardFront" class="royal-front">
-          <p id="royalNumberFront" class="lng-allGameStartTwo number-front royal-number-back-style start">START</p>
-        </div>
-      </div>
-
-      <div class="royal-game-button">
-        <a href="https://1wzlcz.life/casino/list?open=register" class="royal-button-here lng-allGameGameHere">GAME
-          HERE</a>
-        <button id="royalButtonGeneration" class="royal-button-generation">
-          <img id="royalButtonGenerationIcon" class="royal-button-generation-active"
-            src="assets/royal/icon/generation.svg" alt="generation" draggable="false">
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section id="page-bumpucks" class="bumpucks b-none">
-    <div class="bumpucks-background"></div>
-    <div class="bumpucks-inner">
-
-      <div class="bumpucks-instructions-open">
-        <button id="bumpucks-open-instructions">
-          <img src="assets/icon/instructions/open.svg" alt="">
-        </button>
-      </div>
-
-      <div class="bumpucks-button-back">
-        <button id="backHome">
-          <img src="assets/icon/game/back.svg" alt="back">
-        </button>
-      </div>
-
-      <div class="bumpucks-top-content">
-        <div class="bumpucks-game-logo">
-          <img src="assets/bumpucks/icon/logo.svg" alt="logo" draggable="false">
-        </div>
-        <div class="bumpucks-game-name">
-          <p>GOODY</p>
-        </div>
-      </div>
-
-      <div class="bumpucks-card">
-        <div id="bumpucksCardBack" class="bumpucks-back">
-          <p id="bumpucksNumberBack" class="number-back bumpucks-number-back-style"></p>
-        </div>
-        <div id="bumpucksCardFront" class="bumpucks-front">
-          <p id="bumpucksNumberFront" class="lng-allGameStartTwo number-front bumpucks-number-back-style start">START
-          </p>
-        </div>
-      </div>
-
-      <div class="bumpucks-game-button">
-        <a href="https://1wzlcz.life/casino/list?open=register" class="bumpucks-button-here lng-allGameGameHere">GAME
-          HERE</a>
-        <button id="bumpucksButtonGeneration" class="bumpucks-button-generation">
-          <img id="bumpucksButtonGenerationIcon" class="bumpucks-button-generation-active"
-            src="assets/bumpucks/icon/generation.svg" alt="generation" draggable="false">
-        </button>
-      </div>
-
-
-    </div>
-  </section>
-
-  <div id="instructions-mines" class="instructions b-none">
-    <div class="mines-close-instructions">
-      <button id="close-instructions">
-        <img src="assets/icon/instructions/close.svg" alt="">
-      </button>
-    </div>
-
-    <div class="instructions-content">
-      <div class="block-content">
-        <p class="lng-instOneOne">1. Chose game</p>
-        <img src="assets/mines/instructions/1.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instTwoTwo">2. Chose 3 traps</p>
-        <img src="assets/mines/instructions/2.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneFour">3. Play Game</p>
-        <img src="assets/mines/instructions/3.png" alt="">
-      </div>
-    </div>
-  </div>
-
-  <div id="instructions-royal" class="instructions b-none">
-    <div class="royal-close-instructions">
-      <button id="close-instructions">
-        <img src="assets/icon/instructions/close.svg" alt="">
-      </button>
-    </div>
-
-    <div class="instructions-content">
-      <div class="block-content">
-        <p class="lng-instOneOne">1. Chose game</p>
-        <img src="assets/royal/instructions/1.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneTwo">2. Change number of cells</p>
-        <img src="assets/royal/instructions/2.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneThree">3. Select 6x15</p>
-        <img src="assets/royal/instructions/3.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneFour">4. Play Game</p>
-        <img src="assets/royal/instructions/4.png" alt="">
-      </div>
-    </div>
-  </div>
-
-  <div id="instructions-bumpucks" class="instructions b-none">
-    <div id="bumpucks-close-instructions" class="bumpucks-close-instructions">
-      <button id="close-instructions">
-        <img src="assets/icon/instructions/close.svg" alt="">
-      </button>
-    </div>
-
-    <div class="instructions-content">
-      <div class="block-content">
-        <p class="lng-instOneOne">1. Chose game</p>
-        <img src="assets/bumpucks/instructions/1.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneTwo">2. Change number of cells</p>
-        <img src="assets/bumpucks/instructions/2.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneThree">3. Select 6x15</p>
-        <img src="assets/bumpucks/instructions/3.png" alt="">
-      </div>
-
-      <div class="block-content">
-        <p class="lng-instOneFour">4. Play Game</p>
-        <img src="assets/bumpucks/instructions/4.png" alt="">
-      </div>
-    </div>
-  </div>
-
 
   <script src="script/variables.js"></script>
   <script src="script/menu.js"></script>
   <script src="script/aviator.js"></script>
   <script src="script/luckyjet.js"></script>
-  <script src="script/mines.js"></script>
-  <script src="script/Instructions.js"></script>
+  <script src="script/rocket-queen.js"></script>
   <script src="script/lang.js"></script>
 </body>
 

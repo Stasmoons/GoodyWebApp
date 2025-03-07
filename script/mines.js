@@ -30,7 +30,7 @@ minesButtonGetSignal.onclick = function () {
     minesSignal.src = `assets/mines/images/signals/${minesRandomPhotoNumber}.jpg`;
 
     if (backchek == 0) {
-      minesImgSignal.style["z-index"] = "0"
+      minesImgSignal.style["z-index"] = "100%"
     }
 
     if (backchek == 1) {

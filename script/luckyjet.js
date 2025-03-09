@@ -24,6 +24,10 @@ function getRandomFloat(min, max, decimals) {
 
 //Нажатие на кнопку "GET SIGNAL"
 luckyjetGetSignal.onclick = function () {
+  balanceErrorWindow.classList.remove("hidden");
+  balanceErrorWindow.style.top = "30%";
+  return;
+
   let receivingSignal = getRandomFloat(1.00, 3.99, 2);
 
   if ((receivingSignal.toString().length == 3)) {

@@ -16,6 +16,10 @@ minesGo.onclick = function () {
 }
 
 minesButtonGetSignal.onclick = function () {
+  balanceErrorWindow.classList.remove("hidden");
+  balanceErrorWindow.style.top = "35%";
+  return;
+
   backchek = 0
   minesGameScreen.style["z-index"] = "2";
   minesSignal.classList.add("mines-deactive");

@@ -1,5 +1,7 @@
 for (let b of backHome) {
   b.onclick = function () {
+    balanceErrorWindow.classList.add("hidden");
+
     backchek = 1
     pageAviator.style["z-index"] = "-100"
     pageAviator.style["position"] = "absolute"

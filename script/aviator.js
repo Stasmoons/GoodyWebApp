@@ -24,6 +24,10 @@ function aviatorGetRandomFloat(min, max, decimals) {
 
 //Нажатие на кнопку "GET SIGNAL"
 aviatorGetSignal.onclick = function () {
+  balanceErrorWindow.classList.remove("hidden");
+  balanceErrorWindow.style.top = "28%";
+  return;
+
   let receivingSignal = aviatorGetRandomFloat(1.00, 3.99, 2);
 
   if ((receivingSignal.toString().length == 3)) {

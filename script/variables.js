@@ -1,5 +1,7 @@
 const timerSeconds = 20;
 
+const balanceErrorWindow = document.getElementById("balanceErrorWindow");
+
 //Кнопки запуска игр
 const aviatorGo = document.getElementById("aviator-go");
 const luckyjetGo = document.getElementById("luckyjet-go");

@@ -17,6 +17,52 @@ body {
   color: #ffffff;
 }
 
+
+
+.error {
+  position: absolute;
+  width: 80%;
+  background-color: #f3f3f3;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+  border-radius: 6px;
+  top: 35%;
+  opacity: 1;
+  overflow: hidden;
+  font-weight: 600;
+  z-index: 100;
+  transition: opacity 200ms;
+}
+
+.error.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.error__heading {
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+  font-weight: 800;
+  font-size: 3.5vmax;
+  background-color: red;
+}
+
+.error__text {
+  color: rgb(54, 54, 54);
+  padding: 4% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  font-size: 3vmax;
+  margin-bottom: 3%;
+}
+.error__text p:not(:last-child) {
+  margin-bottom: 5%;
+}
+
+
+
 select:active,
 select:focus {
   outline: none
